@@ -9,58 +9,60 @@
 
 <body>
     <div class="container">
-        div class="search-units">
-        <input type="text" id="search" name="search" placeholder="What's the location ?">
-        <div class="units">
-            <button class="unit"> ℃ </button>
-            <button class="unit"> °F </button>
-        </div>
-    </div>
-
-    <div class="temp-details">
-        <div class="left-side">
-            <div class="city">
-                <h3> 📍 </h3>
+        <div class="search-units">
+            <input type="text" id="search" name="search" placeholder="What's the location ?">
+            <div class="units">
+                <button id="unit"> ℃ </button>
+                <button id="unit"> °F </button>
             </div>
-            <div class="weather icon"></div>
-            <div class="details"></div>
         </div>
-        <div class="right-side">
-            <!-- p for the temperature added dynamically -->
-        </div>
-    </div>
 
-    <div class="hum-wind-vis-press">
-        <div class="humidity">
-            <p> &#128167; HUMIDITY</p>
-            <!-- p for the humidity added dynamically -->
-        </div>
-        <div class="wind">
-            <p> &#128168; WIND</p>
-            <!-- p for the wind added dynamically -->
-        </div>
-        <div class="visibility">
-            <p> &#128065; VISIBILITY</p>
-            <!-- p for the visibility added dynamically -->
-        </div>
-        <div class="pressure">
-            <p> &#x1F550; PRESSURE</p>
-            <!-- p for the pressure added dynamically -->
-        </div>
-    </div>
-
-    <div class="forecast">
-        <h3> 5-DAY FORECAST </h3>
-        <div class="days">
-            <!-- days items added dynamically-->
-            <div class="days-item">
-                <p> Day </p>
+        <div class="temp-details">
+            <div class="left-side">
+                <div class="city">
+                    <h3> 📍 New York  </h3>
+                    <!-- h3 for the city's name added dynamically -->
+                </div>
                 <img id="weather-icon">
-                <p> Temp at day </p>
-                <p> Temp at night </p>
+                <div class="details"></div> <!-- h and p added dynamicallys-->
+            </div>
+            <div class="right-side">
+                <!-- p for the temperature added dynamically -->
             </div>
         </div>
-    </div>
+
+        <div class="hum-wind-vis-press">
+            <div class="humidity">
+                <p> &#128167; HUMIDITY</p>
+                <!-- p for the humidity added dynamically -->
+            </div>
+            <div class="wind">
+                <p> &#128168; WIND</p>
+                <!-- p for the wind added dynamically -->
+            </div>
+            <div class="visibility">
+                <p> &#128065; VISIBILITY</p>
+                <!-- p for the visibility added dynamically -->
+            </div>
+            <div class="pressure">
+                <p> &#x1F550; PRESSURE</p>
+                <!-- p for the pressure added dynamically -->
+            </div>
+        </div>
+
+        <div class="forecast">
+            <h3> 5-DAY FORECAST </h3>
+            <div class="days">
+                <!-- days items added dynamically-->
+                <div class="days-item">
+                    <p> Day </p>
+                    <img id="icon">
+                    <p> Temp at day </p>
+                    <p> Temp at night </p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>
