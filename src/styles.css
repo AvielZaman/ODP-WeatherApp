@@ -93,14 +93,18 @@ button.clicked {
 /* TEMP-DETAILS */
 .temp-details {
     display: flex;
-    padding: 10px;
+    padding: 20px;
     justify-content: space-between;
+    background: var(--background);
+    border: var(--border);
+    border-radius: var(--radius);
+    
 }
 
 .left-side{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 25px;
 }
 
 #weather-icon{
@@ -111,6 +115,14 @@ button.clicked {
     background-position: center;
 }
 
+.details{
+    line-height: 1.5;
+}
+
+.details p{
+    font-size: 18px;
+}
+
 .right-side{
     display: flex;
     justify-content: center;
@@ -118,8 +130,91 @@ button.clicked {
     font-size: 30px;
 }
 
-/* HUM-WIND-VIS-PRESS */
+/* added dynamically */
+.right-side p{
+    font-size: 90px;
+    font-weight: bold;
+    color: white;
+}
 
+/* HUM-WIND-VIS-PRESS */
+.hum-wind-vis-press{
+    display: grid;
+    grid-template-columns: 100px, 100px;
+    grid-template-rows: 100px, 100px;
+    gap: 15px;
+}
+
+.wind{
+    grid-column: 2/3;
+}
+
+.humidity,
+.wind,
+.visibility,
+.pressure{
+    background: var(--background);
+    border: var(--border);
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+}
+
+.humidity p:first-child,
+.wind p:first-child,
+.visibility p:first-child,
+.pressure p:first-child{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.humidity p:nth-child(2),
+.wind p:nth-child(2),
+.visibility p:nth-child(2),
+.pressure p:nth-child(2){
+    font-size: 24px;
+    font-weight: bold;
+}
 
 
 /* FORECAST */
+.forecast{
+    background: var(--background);
+    border: var(--border);
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+.days{
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.days-item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* icon added dynamically */
+#icon{
+    background-image: url(/src/assets/half-cloudy.png);
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    background-position: center;
+}
+
+.days-item p:last-child{
+    font-size: 16px;
+    font-weight: 300;
+}
