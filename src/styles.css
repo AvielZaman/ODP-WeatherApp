@@ -39,6 +39,25 @@ body {
     padding: 10px;
 }
 
+.search-box {
+    position: relative;
+}
+
+.search-box input {
+    padding-right: 50px;
+}
+
+#search-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
 input {
     height: 60px;
     width: 300px;
@@ -88,6 +107,8 @@ button:hover {
 /* add dynamic class when button clicked */
 button.clicked {
     background-color: rgb(209, 207, 207);
+    border-radius: 50%;
+
 }
 
 /* TEMP-DETAILS */
@@ -98,32 +119,31 @@ button.clicked {
     background: var(--background);
     border: var(--border);
     border-radius: var(--radius);
-    
+
 }
 
-.left-side{
+.left-side {
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
 
-#weather-icon{
-    background-image: url(/src/assets/half-cloudy.png);
+#weather-icon {
     width: 100px;
     height: 100px;
-    background-size: cover;
-    background-position: center;
+    object-fit: contain;
+    border: none;
 }
 
-.details{
+.details {
     line-height: 1.5;
 }
 
-.details p{
+.details p {
     font-size: 18px;
 }
 
-.right-side{
+.right-side {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,28 +151,28 @@ button.clicked {
 }
 
 /* added dynamically */
-.right-side p{
+.right-side p {
     font-size: 90px;
     font-weight: bold;
     color: white;
 }
 
 /* HUM-WIND-VIS-PRESS */
-.hum-wind-vis-press{
+.hum-wind-vis-press {
     display: grid;
     grid-template-columns: 100px, 100px;
     grid-template-rows: 100px, 100px;
     gap: 15px;
 }
 
-.wind{
+.wind {
     grid-column: 2/3;
 }
 
 .humidity,
 .wind,
 .visibility,
-.pressure{
+.pressure {
     background: var(--background);
     border: var(--border);
     border-radius: var(--radius);
@@ -165,7 +185,7 @@ button.clicked {
 .humidity p:first-child,
 .wind p:first-child,
 .visibility p:first-child,
-.pressure p:first-child{
+.pressure p:first-child {
     font-size: 16px;
     font-weight: bold;
 }
@@ -173,14 +193,14 @@ button.clicked {
 .humidity p:nth-child(2),
 .wind p:nth-child(2),
 .visibility p:nth-child(2),
-.pressure p:nth-child(2){
+.pressure p:nth-child(2) {
     font-size: 24px;
     font-weight: bold;
 }
 
 
 /* FORECAST */
-.forecast{
+.forecast {
     background: var(--background);
     border: var(--border);
     border-radius: var(--radius);
@@ -190,13 +210,13 @@ button.clicked {
     padding: 20px;
 }
 
-.days{
+.days {
     display: flex;
     justify-content: space-around;
     gap: 15px;
 }
 
-.days-item{
+.days-item {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -206,15 +226,14 @@ button.clicked {
 }
 
 /* icon added dynamically */
-#icon{
-    background-image: url(/src/assets/half-cloudy.png);
+.day-icon {
     width: 25px;
     height: 25px;
-    background-size: cover;
-    background-position: center;
+    object-fit: contain;
+    border: none;
 }
 
-.days-item p:last-child{
+.days-item p:last-child {
     font-size: 16px;
     font-weight: 300;
 }

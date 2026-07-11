@@ -10,10 +10,13 @@
 <body>
     <div class="container">
         <div class="search-units">
-            <input type="text" id="search" name="search" placeholder="What's the location ?">
+            <div class="search-box">
+                <input type="text" id="search" name="search" placeholder="What's the location ?">
+                <button id="search-btn">🔍</button>
+            </div>
             <div class="units">
-                <button id="unit"> ℃ </button>
-                <button id="unit"> °F </button>
+                <button id="celsius-btn">℃</button>
+                <button id="fahrenheit-btn" class="clicked">°F</button>
             </div>
         </div>
 
