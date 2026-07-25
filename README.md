@@ -6,6 +6,8 @@ This project focuses on handling asynchronous data, modular architecture, and dy
 
 ---
 
+![Screenshot](image.png)
+
 ## 📌 Features
 
 * 🔍 Search weather by city name
